@@ -23,6 +23,7 @@ require (
 	github.com/redis/go-redis/v9 v9.11.0 // indirect
 	github.com/rs/zerolog v1.34.0 // indirect
 	github.com/smartystreets/go-aws-auth v0.0.0-20180515143844-0c1422d1fdb9 // indirect
+	github.com/spf13/cast v1.9.2 // indirect
 	github.com/xneogo/Z1ON0101 v0.0.0-20250702023647-0c1854a467d5 // indirect
 	github.com/xneogo/extensions v0.0.0-20250702024003-e4d7eeeb70db // indirect
 	go.opencensus.io v0.23.0 // indirect
