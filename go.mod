@@ -31,7 +31,7 @@ require (
 	github.com/spf13/cast v1.9.2 // indirect
 	github.com/xneogo/Z1ON0101 v0.0.0-20250702023647-0c1854a467d5 // indirect
 	github.com/xneogo/extensions v0.0.0-20250702060000-0d1f920307be // indirect
-	github.com/xneogo/matrix v0.0.0-20250702064300-0af0064ca0e6 // indirect
+	github.com/xneogo/matrix v0.0.0-20250703031223-ad17d6e0085a // indirect
 	go.opencensus.io v0.23.0 // indirect
 	go.opentelemetry.io/otel v1.5.0 // indirect
 	go.opentelemetry.io/otel/trace v1.5.0 // indirect
