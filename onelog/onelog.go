@@ -75,6 +75,13 @@ func Str(ctx context.Context, key string, val string) context.Context {
 	return zerolog.Ctx(ctx).With().Str(key, val).Logger().WithContext(ctx)
 }
 
+func StrWithSize(ctx context.Context, key string, val string, maxSize int64) context.Context {
+	if maxSize == 0 || len(val) < int(maxSize) {
+		return zerolog.Ctx(ctx).With().Str(key, val).Logger().WithContext(ctx)
+	}
+	return zerolog.Ctx(ctx).With().Str(key, val[:maxSize]).Logger().WithContext(ctx)
+}
+
 func Strs(ctx context.Context, key string, val []string) context.Context {
 	return zerolog.Ctx(ctx).With().Strs(key, val).Logger().WithContext(ctx)
 }
@@ -90,6 +97,13 @@ func Int64s(ctx context.Context, key string, val []int64) context.Context {
 
 func Bytes(ctx context.Context, key string, val []byte) context.Context {
 	return zerolog.Ctx(ctx).With().Bytes(key, val).Logger().WithContext(ctx)
+}
+
+func BytesWithSize(ctx context.Context, key string, val []byte, maxSize int64) context.Context {
+	if maxSize == 0 || len(val) < int(maxSize) {
+		return zerolog.Ctx(ctx).With().Bytes(key, val).Logger().WithContext(ctx)
+	}
+	return ctx
 }
 
 func Any(ctx context.Context, key string, val interface{}) context.Context {
