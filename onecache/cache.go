@@ -39,14 +39,14 @@ type (
 )
 
 var (
-	ErrBadIdsType              = errors.New("cache: ids must be slice")
-	ErrBadSrcType              = errors.New("cache: src must be a slice or pointer-to-slice")
-	ErrBadDstType              = errors.New("cache: dst must be a pointer")
-	ErrBadDstMapType           = errors.New("cache: dst must be a map or pointer-to-map")
-	ErrBadDstMapValue          = errors.New("cache: dst must not be a nil map")
-	ErrSrcDstTypeMismatch      = errors.New("cache: type of fallback result mismatch error")
-	ErrBadFallbackResultType   = errors.New("cache: type of fallbackResultV must be map")
-	ErrDstFallbackTypeMismatch = errors.New("cache: key type and value type of fallbackResult is not equal to map")
+	ErrBadIdsType              = errors.New("one cache: ids must be slice")
+	ErrBadSrcType              = errors.New("one cache: src must be a slice or pointer-to-slice")
+	ErrBadDstType              = errors.New("one cache: dst must be a pointer")
+	ErrBadDstMapType           = errors.New("one cache: dst must be a map or pointer-to-map")
+	ErrBadDstMapValue          = errors.New("one cache: dst must not be a nil map")
+	ErrSrcDstTypeMismatch      = errors.New("one cache: type of fallback result mismatch error")
+	ErrBadFallbackResultType   = errors.New("one cache: type of fallbackResultV must be map")
+	ErrDstFallbackTypeMismatch = errors.New("one cache: key type and value type of fallbackResult is not equal to map")
 )
 
 type CacheBox interface {
